@@ -3,6 +3,7 @@ import random
 from fitness_function import *
 from constants import BLACK, WHITE, EMPTY
 
+# small update to attribute work correctly
 
 def board_to_char(board):
     char_board = []
@@ -18,6 +19,7 @@ def board_to_char(board):
         char_board.append(row)
     return char_board
 
+#Checking valid move
 def is_valid_move_board(board, row, col, player):
     if row < 0 or row > 7 or col < 0 or col > 7 or board[row][col] != EMPTY:
         return False
